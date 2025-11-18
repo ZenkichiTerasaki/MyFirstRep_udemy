@@ -1,7 +1,7 @@
-import { UserStatus } from "generated/prisma";
+import { UserStatus } from '@prisma/client';
 
 export type JwtPayload = {
-    sub: string;
-    username: string;
-    status: UserStatus;
-}
+  sub: string;
+  username: string;
+  status: UserStatus;
+};

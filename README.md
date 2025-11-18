@@ -38,12 +38,21 @@ docker compose up   //二回目以降
 
 #### ローカルサーバのセットアップ
 
+.envの追加
+
+```
+DATABASE_URL=""
+JWT_SECRET=""
+```
+
 ```
 cd ./backend
 
 npm install
+npx prisma generate
 npm run start:dev
 ```
+
 
 ## フロントエンド
 
@@ -60,3 +69,6 @@ cd ./frontend
 npm install
 npm run dev
 ```
+
+-nodeのバージョンによっては上手く動作しないようです．（25.x.xでは動作しませんでした）
+->22.x.xで動作確認
