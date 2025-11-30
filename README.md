@@ -6,7 +6,7 @@ Udemyの講義で作成したバックエンド部分をもとにフロントエ
 
 ### 初回
 ```
-git clone https://github.com/ZenkichiTerasaki/MyFirstRep_udemy.git
+git clone git@github.com/ZenkichiTerasaki/MyFirstRep_udemy.git
 ```
 
 ### 二回目以降
