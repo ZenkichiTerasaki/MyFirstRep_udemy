@@ -47,6 +47,7 @@ export class ItemsController {
   }
 
   @Delete(':id')
+  @UseGuards(AuthGuard('jwt'))
   async delete(
     @Param('id', ParseUUIDPipe) id: string,
     @Request() req: ExpressRequest & { user: RequestUser },
